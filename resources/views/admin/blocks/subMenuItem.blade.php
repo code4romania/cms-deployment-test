@@ -32,12 +32,12 @@
         @else
             @formField('select', [
                 'name'     => 'target',
-                'label'    => __("admin.model.{$type}"),
+                'label'    => __("admin.{$type}"),
                 'native'   => true,
                 'max'      => 1,
                 'options'  => app( config('twill.namespace') . '\\Models\\' . ucfirst($type) )
-                    ->publishedInListings()
-                    ->get()
+                    ->with([ 'translation' => fn ($query) => $query->select('id', 'title') ])
+                    ->get('id', 'title')
                     ->map(fn($item) => [ 'value' => $item->id, 'label' => $item->title ])
                     ->toArray(),
             ])

@@ -1,3 +1,1 @@
-<?php
-
-// Register Twill routes here (eg. Route::module('posts'))
+<?php // this file is intentionally left blank

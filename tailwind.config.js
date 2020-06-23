@@ -55,6 +55,17 @@ module.exports = {
                 800: '#730000',
                 900: '#4D0000',
             },
+            success: {
+                100: '#E8F5EC',
+                200: '#C7E7CE',
+                300: '#A5D9B1',
+                400: '#61BC77',
+                500: '#1D9F3C',
+                600: '#1A8F36',
+                700: '#115F24',
+                800: '#0D481B',
+                900: '#093012',
+            },
             gray: {
                 100: '#F6F7F9',
                 200: '#E7EBEF',
@@ -133,6 +144,21 @@ module.exports = {
                     textDecoration: 'none',
                 },
             },
+            embed: {
+                position: 'relative',
+                overflow: 'hidden',
+                display: 'block',
+                width: '100%',
+                padding: 0,
+
+                'iframe, video': {
+                    position: 'absolute',
+                    height: '100%',
+                    width: '100%',
+                    left: 0,
+                    top: 0,
+                },
+            },
             richText: {
                 lineHeight: theme('lineHeight.relaxed'),
                 '> * + *': {
@@ -188,12 +214,24 @@ module.exports = {
                 },
             },
         }),
+        // This should match the aspect raio values defined in config/cms/embeds.php
         aspectRatio: {
-            none: 0,
-            square: [1, 1],
-            '16/9': [16, 9],
+            '1/1': [1, 1],
+            '5/4': [5, 4],
             '4/3': [4, 3],
-            '21/9': [21, 9],
+            '3/2': [3, 2],
+            '5/3': [5, 3],
+            '16/9': [16, 9],
+            '2/1': [2, 1],
+            '3/1': [3, 1],
+            '5/6': [5, 6],
+            '4/5': [4, 5],
+            '3/4': [3, 4],
+            '2/3': [2, 3],
+            '3/5': [3, 5],
+            '9/16': [9, 16],
+            '1/2': [1, 2],
+            '1/3': [1, 3],
         },
     },
     variants: {
@@ -214,6 +252,7 @@ module.exports = {
         ],
         options: {
             whitelist: ['rich-text'],
+            whitelistPatterns: [/^aspect-ratio-/],
         },
     },
 };

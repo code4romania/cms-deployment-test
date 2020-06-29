@@ -4,6 +4,7 @@ return [
 
     'category'   => 'Category',
     'categories' => 'Categories',
+    'blog'       => 'Blog',
     'cityLab'    => 'City Lab',
     'cityLabs'   => 'City Labs',
     'form'       => 'Form',
@@ -39,6 +40,7 @@ return [
         'menuItems'         => 'Menu items',
         'menuLocation'      => 'Menu location',
         'name'              => 'Name',
+        'newTab'            => 'Open in new tab',
         'number'            => 'Number',
         'quote'             => 'Quote',
         'recipients'        => 'Recipients',
@@ -70,7 +72,6 @@ return [
         'config'       => 'Configuration',
         'global'       => 'Global',
         'globalNotice' => 'Global notice',
-        'seo'          => 'SEO Settings',
     ],
 
     'position' => [
@@ -88,7 +89,9 @@ return [
         ],
         'type' => [
             'external' => 'External',
-            'page' => 'Page',
+            'page'     => 'Page',
+            'category' => 'Category',
+            'blog'     => 'Blog',
         ],
     ],
 

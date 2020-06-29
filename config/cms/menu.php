@@ -12,6 +12,8 @@ return [
     'itemTypes' => [
         'external',
         'page',
+        'category',
+        'blog',
     ],
 
 ];

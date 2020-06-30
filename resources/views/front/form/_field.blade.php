@@ -1,7 +1,11 @@
 @php
     $sectionIndex ??= null;
-    $fieldIndex ??= null;
-    $fieldClass = collect('block');
+    $fieldIndex   ??= null;
+
+    $fieldName = "fields[{$sectionIndex}][{$fieldIndex}]";
+    $fieldId   = "fields.{$sectionIndex}.{$fieldIndex}";
+
+    $fieldClass = collect(['field', 'block']);
 
     switch ($field->input('width')) {
         case 'half':
@@ -15,21 +19,24 @@
     }
 @endphp
 
-<label class="{{ $fieldClass->join(' ') }}">
-    <span class="inline font-semibold text-black">{{ $field->translatedInput('label') }}</span>
+<div class="{{ $fieldClass->join(' ') }}">
+    <label for="{{ $fieldId }}">
+        <span class="inline font-semibold text-black">{{ $field->translatedInput('label') }}</span>
 
-    @if ($field->translatedInput('help') !== '')
-        <span class="inline text-gray-700">{{ $field->translatedInput('help') }}</span>
-    @endif
+        @if ($field->translatedInput('help') !== '')
+            <span class="inline text-gray-700">{{ $field->translatedInput('help') }}</span>
+        @endif
+    </label>
 
     @includeFirst(["front.form.{$type}", 'front.form.input'], [
         'type'       => $type,
-        'name'       => sprintf('fields[%s][%s]', $sectionIndex, $fieldIndex),
+        'name'       => $fieldName,
+        'id'         => $fieldId,
         'field'      => $field,
         'attributes' => $field->present()->formFieldAttributes,
     ])
 
     @include('front.form._error', [
-        'name' => sprintf('fields.%s.%s', $sectionIndex, $fieldIndex),
+        'name' => $fieldId,
     ])
-</label>
+</div>

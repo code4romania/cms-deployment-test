@@ -2,6 +2,11 @@
 
 return [
 
+    /**
+     * The tracking id of which you want to record data.
+     */
+    'tracking_id' => env('ANALYTICS_TRACKING_ID'),
+
     /*
      * The view id of which you want to display data.
      */

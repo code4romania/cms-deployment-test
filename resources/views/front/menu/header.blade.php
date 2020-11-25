@@ -14,16 +14,18 @@
         <li class="relative py-2 lg:ml-6">
             @if ($item['children'])
                 <div x-data="{ open: false }" x-on:click.away="open = false">
-                    <button class="{{ $baseButton }} hidden lg:flex lg:items-center" x-on:click="open = !open">
+                    <button class="{{ $baseButton }} hidden font-light lg:flex lg:items-center" x-on:click="open = !open">
                         <span>{{ $item['label'] }}</span>
                         {{ svg('icons/dropdown', '-mr-1 ml-1 h-5 w-5') }}
                     </button>
 
+                    {{--
                     <x-link
                         class="{{ $baseButton }} flex lg:hidden"
                         href="{{ $item['url'] }}"
                         newtab="{{ $item['newtab'] }}"
                     >{{ $item['label'] }}</x-link>
+                    --}}
 
                     <div class="pl-5 lg:shadow-xs lg:pl-0 lg:absolute lg:right-0 lg:mt-2 lg:w-48 lg:origin-top-right lg:bg-white" :class="{ 'lg:hidden' : !open }" x-cloak>
                         <ul class="lg:shadow-lg">
@@ -60,6 +62,7 @@
         </li>
     @endforeach
 
+    {{--
     @foreach ($alternateUrls as $locale => $url)
         <li class="py-2 lg:ml-6">
             <a
@@ -70,4 +73,5 @@
             >{{ strtoupper($locale) }}</a>
         </li>
     @endforeach
+    --}}
 </ul>

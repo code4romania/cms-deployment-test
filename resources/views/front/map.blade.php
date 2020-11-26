@@ -1,7 +1,7 @@
 @extends('front.layouts.app')
 
 @section('content')
-    <iframe id="map-container" class="w-full" src="https://code-for-map.vercel.app/" frameborder="0"></iframe>
+    <iframe id="map-container" class="w-full -my-20" src="https://code-for-map.vercel.app/" frameborder="0"></iframe>
 
     <script>
         window.addEventListener('message', (event) => {

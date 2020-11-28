@@ -15,6 +15,7 @@ return [
     'locales' => [
         'ro',
         'en',
+        'hu',
     ],
 
 

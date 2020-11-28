@@ -21,15 +21,18 @@ return [
     'languages' => [
         'ro' => 'Română',
         'en' => 'English',
+        'hu' => 'Magyar',
     ],
 
     'languageCodes' => [
         'ro' => 'ro_RO',
         'en' => 'en_GB',
+        'hu' => 'hu_HU',
     ],
 
     'disabled' => [
-        'en'
+        'en',
+        'hu',
     ],
 
 

@@ -9,7 +9,15 @@
                 return;
             }
 
-            document.getElementById('map-container').style.height = (event.data.height || 1000) + 'px';
+            const container = document.getElementById('map-container');
+
+            if (event.data.height) {
+                container.style.height = (event.data.height || 1000) + 'px';
+            }
+
+            if (event.data.navigate) {
+                window.scrollTo(0, container.getBoundingClientRect().top + window.pageYOffset);
+            }
         }, false);
     </script>
 @endsection

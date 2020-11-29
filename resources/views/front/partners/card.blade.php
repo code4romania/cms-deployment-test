@@ -1,3 +1,5 @@
+@inject('url', 'Code4Romania\Cms\Helpers\UrlHelper')
+
 @php
     $outerClass = 'relative h-0 bg-white border border-gray-400 aspect-ratio-1/1';
 @endphp
@@ -8,8 +10,10 @@
             class="{{ $outerClass }} block hover:border-gray-800 focus:outline-none focus:shadow-outline"
             href="{{ $partner->website }}"
             title="{{ $partner->name }}"
-            rel="noopener noreferrer"
-            target="_blank"
+            @if ($url->isExternal($partner->website))
+                rel="noopener noreferrer"
+                target="_blank"
+            @endif
         >
     @else
         <div class="{{ $outerClass }}">

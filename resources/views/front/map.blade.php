@@ -16,7 +16,7 @@
             }
 
             if (event.data.navigate) {
-                window.scrollTo(0, container.getBoundingClientRect().top + window.pageYOffset);
+                window.scrollTo(0, container.getBoundingClientRect().top + window.pageYOffset + event.data.navigate);
             }
         }, false);
     </script>

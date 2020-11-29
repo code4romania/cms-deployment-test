@@ -54,7 +54,9 @@ return [
 
             'site_name'   => false,
 
-            'images'      => [],
+            'images'      => [
+                'https://code4.ro/assets/images/ogimage.png',
+            ],
         ],
     ],
 
@@ -78,7 +80,9 @@ return [
 
             'type'        => 'WebPage',
 
-            'images'      => [],
+            'images'      => [
+                'https://code4.ro/assets/images/ogimage.png',
+            ],
         ],
     ],
 ];

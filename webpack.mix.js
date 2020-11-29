@@ -24,5 +24,6 @@ mix.setPublicPath('public/assets/cms')
     .js('resources/assets/js/app.js', 'public/assets/cms')
     .postCss('resources/assets/css/app.pcss', 'public/assets/cms', config)
     .postCss('resources/assets/css/content.pcss', 'public/assets/cms', config)
+    .copyDirectory('resources/assets/images', 'public/assets/images')
     .copyDirectory('resources/assets/favicons', 'public/assets/favicons')
     .extract();

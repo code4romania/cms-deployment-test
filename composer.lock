@@ -709,12 +709,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/code4romania/cms.git",
-                "reference": "5115bd154e9d84467134f496f60a924f883b3f39"
+                "reference": "e36ae558b5fa5e841ddcb382eb33c5da5355c731"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/code4romania/cms/zipball/5115bd154e9d84467134f496f60a924f883b3f39",
-                "reference": "5115bd154e9d84467134f496f60a924f883b3f39",
+                "url": "https://api.github.com/repos/code4romania/cms/zipball/e36ae558b5fa5e841ddcb382eb33c5da5355c731",
+                "reference": "e36ae558b5fa5e841ddcb382eb33c5da5355c731",
                 "shasum": ""
             },
             "require": {
@@ -775,7 +775,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-11-29T22:47:25+00:00"
+            "time": "2020-11-29T23:00:58+00:00"
         },
         {
             "name": "composer/ca-bundle",

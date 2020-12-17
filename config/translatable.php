@@ -32,8 +32,8 @@ return [
     ],
 
     'disabled' => [
-        'en',
-        'hu',
+        // 'en',
+        // 'hu',
     ],
 
 

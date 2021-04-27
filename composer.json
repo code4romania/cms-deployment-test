@@ -9,6 +9,8 @@
     "license": "MIT",
     "require": {
         "php": "^7.2.5",
+        "bref/bref": "^1.2",
+        "bref/laravel-bridge": "^1.0",
         "code4romania/cms": "dev-master",
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
@@ -27,7 +29,11 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "platform": {
+            "php": "7.4",
+            "ext-gd": "0"
+        }
     },
     "extra": {
         "laravel": {

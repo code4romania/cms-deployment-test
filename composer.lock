@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7da737f8fc673a64c90097e73df08d7",
+    "content-hash": "15eef15b2b8ed0c99d3e3cd3145afbec",
     "packages": [
         {
             "name": "area17/twill",
@@ -705,16 +705,16 @@
         },
         {
             "name": "code4romania/cms",
-            "version": "dev-master",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/code4romania/cms.git",
-                "reference": "f243101a740ca617260e999cf583b66c4e00c70e"
+                "reference": "8e42a8862cf535ed1f6522a0c5fb43b96886d5c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/code4romania/cms/zipball/f243101a740ca617260e999cf583b66c4e00c70e",
-                "reference": "f243101a740ca617260e999cf583b66c4e00c70e",
+                "url": "https://api.github.com/repos/code4romania/cms/zipball/8e42a8862cf535ed1f6522a0c5fb43b96886d5c6",
+                "reference": "8e42a8862cf535ed1f6522a0c5fb43b96886d5c6",
                 "shasum": ""
             },
             "require": {
@@ -767,7 +767,7 @@
             "homepage": "https://github.com/code4romania/cms",
             "support": {
                 "issues": "https://github.com/code4romania/cms/issues",
-                "source": "https://github.com/code4romania/cms/tree/master"
+                "source": "https://github.com/code4romania/cms/tree/main"
             },
             "funding": [
                 {
@@ -775,7 +775,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-12-03T10:30:06+00:00"
+            "time": "2021-07-02T09:18:57+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -12433,5 +12433,5 @@
         "php": "^7.2.5"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
